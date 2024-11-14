@@ -1,0 +1,293 @@
+/* Background Container */
+.background-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   z-index: -1;
+   display: flex;
+   background-color: #005b8a; /* Deep blue background */
+}
+
+/* Background Images */
+.background-image {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   opacity: 0;
+   animation: subtleMove 8s infinite alternate;
+   transition: opacity 1s ease-in-out;
+}
+
+.background-image1 {
+   background-image: url('./components/food4.jpg');
+   opacity: 1;
+}
+
+/* Subtle Move Animation */
+@keyframes subtleMove {
+   0% {
+       transform: translateX(0);
+       opacity: 1;
+   }
+   50% {
+       transform: translateX(-10px);
+       opacity: 0.9;
+   }
+   100% {
+       transform: translateX(10px);
+       opacity: 1;
+   }
+}
+
+/* Styling for the auth form container */
+.auth-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #f7e6e6; /* Light blue text for contrast */
+    background-color: #005b8a; /* Deep blue background for form */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e6f0f7; /* Light blue color for headings */
+}
+
+/* Input and button styling */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #005b8a; /* Blue border for inputs */
+    background-color: #c9e4f1; /* Soft light blue for inputs */
+    color: #005b8a; /* Blue text color */
+}
+
+input:focus {
+    border-color: #003f5c; /* Darker blue border when focused */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #005b8a; /* Main blue for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #003f5c; /* Darker blue on hover */
+}
+
+button:active {
+    background-color: #002c43; /* Even darker blue when button is pressed */
+}
+
+/* Error message styling */
+.error {
+    color: #e04b4b; /* Soft red for error messages */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Styling the sign up/login toggle text */
+.toggle-login-signup {
+    text-align: center;
+}
+
+#logii {
+   color: #005b8a; /* Blue color for toggle text */
+}
+
+.toggle-login-signup button {
+    background-color: #005b8a;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.toggle-login-signup button:hover {
+    text-decoration: underline;
+}
+
+/* General Body Styling */
+body {
+   font-family: 'Bahnschrift', 'Arial', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #005b8a; /* Deep blue background for body */
+   color: #1e4865; /* Light text color to contrast the blue background */
+}
+
+/* Header Styling */
+.header {
+   text-align: center;
+   color: #e6f0f7; /* Light blue text */
+   padding: 10px 0;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.header-logo {
+   width: 250px;
+   height: auto;
+   margin-right: 15px;
+}
+
+.header h2 {
+   font-size: 2.2em;
+   margin: 0;
+}
+
+/* Section Styling */
+section {
+   margin-bottom: 20px;
+   background-color: #e6f0f7; /* Light blue background for sections */
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+   margin: 0;
+}
+
+/* Label and Input Styling */
+label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+   width: calc(100% - 20px);
+   padding-left: 10px;
+   padding-right: 10px;
+   background-color: #c9e4f1; /* Soft light blue for inputs */
+   border: 1px solid #005b8a; /* Blue border for inputs */
+   color: #005b8a; /* Blue text for input fields */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+   border-color: #003f5c; /* Darker blue when focused */
+   outline: none;
+}
+
+/* Button Styling */
+button {
+   width: 150px;
+   background-color: #005b8a; /* Main blue button color */
+   border-radius: 5px;
+   padding: 10px;
+}
+
+button:hover {
+   background-color: #003f5c; /* Darker blue on hover */
+}
+
+button:active {
+   background-color: #002c43; /* Even darker blue when clicked */
+}
+
+/* Form Styling */
+form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Table Styling */
+.product-table, table {
+   width: 100%;
+   border: 1px solid #005b8a; /* Blue border for tables */
+   border-collapse: collapse;
+}
+
+.product-table th, .product-table td {
+   border: 1px solid #005b8a; /* Blue border for table cells */
+   padding: 10px;
+}
+
+.product-table th {
+   background-color: #005b8a; /* Blue header background */
+   color: white; /* White text for headers */
+}
+
+.product-table tr:hover {
+   background-color: #c9e4f1; /* Light hover effect for table rows */
+}
+
+/* Navigation Styling */
+.nav {
+   display: flex;
+   gap: 15px;
+   margin-top: 10px;
+}
+
+.nav a {
+   color: #e6f0f7;
+   text-decoration: none;
+   background-color: #005b8a; /* Blue background for nav links */
+   font-weight: bold;
+   padding: 5px 10px;
+   border-radius: 4px;
+   transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+   background-color: #003f5c; /* Darker blue on hover */
+}
+
+.nav a:focus {
+   background-color: #003f5c; /* Darker blue on focus */
+   outline: none;
+}
+
+/* Icon Styling */
+.icon {
+   color: #005b8a; /* Blue color for icons */
+   font-size: 24px;
+}
+
+.icon:hover {
+   color: #003f5c; /* Darker blue on icon hover */
+}
+
+/* Footer Styling */
+.footer {
+   text-align: center;
+   padding: 20px;
+   background-color: #003f5c; /* Darker blue footer */
+   color: white;
+}
+
+.footer a {
+   color: #e6f0f7; /* Light blue for footer links */
+   text-decoration: none;
+}
+
+.footer a:hover {
+   text-decoration: underline; /* Underline on hover */
+}
